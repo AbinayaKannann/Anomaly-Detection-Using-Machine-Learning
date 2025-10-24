@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection System</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .upload-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .upload-box:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        .logo-img {
+            border-radius: 50%;
+            width: 250px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Logo and Title -->
+        <img src="static/intru.jpg" alt="Anomaly Logo" class="logo-img ">
+        <h1 class="animate__animated animate__zoomIn">Anomaly Detection System</h1>
+        <p class="animate__animated animate__fadeInUp">Secure your systems with AI-powered intrusion detection.</p>
+
+        <!-- Upload Form -->
+        <div class="upload-box animate__animated animate__fadeInUp">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" class="form-control-file mb-4" required>
+                <button type="submit" class="btn btn-success btn-lg">Upload & Predict</button>
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Anomaly Detection System. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
